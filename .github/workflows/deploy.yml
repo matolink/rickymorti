@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses:actions/checkout@v2 
+        uses: actions/checkout@v2 
       - name: compiler install
-        uses:npm install
+        uses: npm install
       - name: build
         uses: npx next build 
       - name: export

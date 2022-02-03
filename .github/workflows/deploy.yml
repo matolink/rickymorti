@@ -15,8 +15,6 @@ jobs:
         run: npx next build 
       - name: export
         run: npx next export 
-      - name: checkout
-        uses: actions/checkout@v2 
       - name: deploy to surge rickymortilink.surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:

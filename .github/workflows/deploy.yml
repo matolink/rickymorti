@@ -10,11 +10,11 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2 
       - name: compiler install
-        uses: npm install
+        run: npm install
       - name: build
-        uses: npx next build 
+        run: npx next build 
       - name: export
-        uses: npx next export 
+        run: npx next export 
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
